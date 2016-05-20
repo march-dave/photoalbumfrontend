@@ -17,10 +17,12 @@ module.exports = function(config) {
     files: [
       'public/bower_components/angular/angular.min.js',
       'public/bower_components/angular-mocks/angular-mocks.js',
+      'public/bower_components/angular-ui-router/release/angular-ui-router.min.js',
+      'public/js/module.js',
       'public/js/*.js',
-      'test.js'
 
-      ,'main.js'
+      // 'main.js',
+      'test.js'
     ],
 
 
