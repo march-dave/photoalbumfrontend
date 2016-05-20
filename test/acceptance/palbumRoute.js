@@ -13,7 +13,7 @@ var app = require('../../app');
 
 const supertest = require('supertest');
 
-const MONGOURL = 'mongodb://localhost:/pa-app';
+const MONGOURL = 'mongodb://localhost:/paf-app';
 
 before(function(cb) {
   mongoose.connection.close(function() {

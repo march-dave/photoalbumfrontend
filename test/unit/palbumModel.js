@@ -11,7 +11,7 @@ var Palbum = require('../../models/palbum');
 
 var server = require('../../app');
 
-const MONGOURL = 'mongodb://localhost:/pa-app';
+const MONGOURL = 'mongodb://localhost:/paf-app';
 
 beforeEach(function(cb) {
 

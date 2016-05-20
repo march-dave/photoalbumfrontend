@@ -18,7 +18,7 @@ var users = require('./routes/users');
 var app = express();
 
 var mongoose = require('mongoose');
-const MONGOURL = process.env.MONGODB_URI || 'mongodb://localhost:/pa-app'
+const MONGOURL = process.env.MONGODB_URI || 'mongodb://localhost:/paf-app'
 mongoose.connect(MONGOURL, err => {
     console.log(err || `Connected to MongoDB at ${MONGOURL}`);
 });

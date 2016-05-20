@@ -1,7 +1,7 @@
 'use strict';
 
 if(process.env.TESTING) {
-  const MONGOURL = 'mongodb://localhost:/test-pa-app';
+  const MONGOURL = 'mongodb://localhost:/test-paf-app';
 } else {
   const MONGOURL = process.env.MONGODB_URI;
 }
