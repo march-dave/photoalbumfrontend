@@ -4,6 +4,12 @@
     <title><%= title %></title>
     <link rel='stylesheet' href='/css/style.css'/>
 
+    <link rel="stylesheet" href="/bower_components/semantic/dist/semantic.min.css">
+    <link rel='stylesheet' href='/css/style.css' />
+
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/semantic/dist/semantic.min.js"></script>
+
     <script src="/bower_components/angular/angular.min.js"></script>
     <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 
@@ -13,10 +19,9 @@
 
   </head>
   <body ng-app='pafApp' ng-controller='homeCtrl'>
-    <!-- <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p> -->
 
-    <ui-view></ui-view>
-
+    <div class='container'>
+      <ui-view></ui-view>
+    </div>
   </body>
 </html>

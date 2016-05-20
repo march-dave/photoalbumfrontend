@@ -2,10 +2,19 @@
 
 var app = angular.module('pafApp');
 
-app.controller('homeCtrl', function($scope, PhotoAlbumService) {
+app.controller('homeCtrl', function($scope, PhotoAlbumService, $http) {
   console.log('PhotoAlbumService: ', PhotoAlbumService);
 
   $scope.photos = PhotoAlbumService;
+
+  $scope.addphoto = () => {
+
+    console.log($scope.photo);
+
+    // localhost:3000/api/palbum
+    $http.post('/api/palbum', $scope.photo);
+
+  }
 
 });
 

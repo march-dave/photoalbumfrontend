@@ -1,15 +1,15 @@
-<table class="ui very basic collapsing celled table">
+<table class="ui celled table">
   <thead>
     <tr>
       <th>Image</th>
-      <th>Namet</th>
+      <th>Name</th>
       <th>Date Time</th>
   </tr></thead>
   <tbody>
     <tr ng-repeat='photo in photos'>
       <td>
         <h4 class="ui image header">
-          <i class="user icon"></i>
+          <!-- <i class="user icon"></i> -->
           <div class="content">
             <img ng-src='{{ photo.imageurl }}' height="150" width="150">
             <div class="sub header">
@@ -25,3 +25,25 @@
     </tr>
   </tbody>
 </table>
+
+<h1 class='text-center'>Photo Album</h1>
+<div class="row">
+  <div class="col-xs-8 col-xs-offset-2">
+
+    <form class="ui form" ng-submit='addphoto()'>
+
+      <div class="field">
+        <label>Image Url</label>
+        <input type="text" ng-model='photo.imageurl'>
+      </div>
+      <div class="field">
+        <label>Name</label>
+        <input type="text" ng-model='photo.imagename'>
+      </div>
+
+      <button class="ui button">Submit</button>
+
+    </form>
+
+  </div>
+</div>
