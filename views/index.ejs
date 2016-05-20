@@ -2,10 +2,21 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/css/style.css'/>
+
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <script src="/js/module.js"></script>
+    <script src="/js/controllers.js"></script>
+    <script src="/js/services.js"></script>
+
   </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+  <body ng-app='pafApp' ng-controller='homeCtrl'>
+    <!-- <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p> -->
+
+    <ui-view></ui-view>
+
   </body>
 </html>

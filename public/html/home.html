@@ -1,0 +1,27 @@
+<table class="ui very basic collapsing celled table">
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th>Namet</th>
+      <th>Date Time</th>
+  </tr></thead>
+  <tbody>
+    <tr ng-repeat='photo in photos'>
+      <td>
+        <h4 class="ui image header">
+          <i class="user icon"></i>
+          <div class="content">
+            <img ng-src='{{ photo.imageurl }}' height="150" width="150">
+            <div class="sub header">
+          </div>
+        </div>
+      </h4></td>
+      <td>
+        {{ photo.imagename }}
+      </td>
+      <!-- <td>
+        {{ bid.biddingTime }}
+      </td> -->
+    </tr>
+  </tbody>
+</table>
